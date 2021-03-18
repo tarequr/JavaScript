@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Popup Box: 1.alert</h3></u><br>
+
+			<script type="text/javascript">
+				function show_alert() {
+					alert("Assalamu alaikum everyone...!")
+				}
+			</script>
+
+			<input type="button" class="btn" onclick="show_alert();" value="Show an alert box">
+
+			<u><h3 align="center">JavaScript Popup Box: 2.confirm</h3></u><br>
+
+			<script type="text/javascript">
+				function show_confirm() {
+					var confirm_var = confirm("Do you want to marry?");
+
+					// here ok is true and cancel is false
+					if (confirm_var == true) {
+						alert("He want to marry...");
+					}else{
+						alert("He did not want marry...");
+					}
+				}
+			</script>
+
+			<input type="button" class="btn" value="Show a confirm box" onclick="show_confirm();">
+
+			<u><h3 align="center">JavaScript Popup Box: 3.Prompt</h3></u><br>
+
+			<script type="text/javascript">
+				function show_prompt() {
+					var name = prompt("Please enter your name","Tarequr Rahman Sabbir!")
+
+					if (name != null && name != "") {
+						document.write("Hello "+name+"! How are today?");
+					}
+				}
+			</script>
+
+			<input type="button" class="btn" value="Show prompt box" onclick="show_prompt();">
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir
+			</h2>
+		</div>
+	</section>
+</body>
+</html>

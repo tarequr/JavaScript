@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<h3 align="center">Introduction Using Id</h3>
+
+			<p id="demo">JavaScript can change HTML content</p>
+
+			<button class="btn" type="button" onclick="valuee();">Click Here...</button>
+
+			<script type="text/javascript">
+				function valuee() {
+					var name = "Hello Bangladesh";
+					document.getElementById('demo').innerHTML = name;
+				}
+			</script>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Global Variable & Local Variable: </h3></u><br><br>
+
+			<script type="text/javascript">
+				var linebreak = "<br>";
+				var cousin    = "Tamjid Hasan Rafi";
+
+				function nameOne() {
+					var name = "Tarequr Rahman Sabbir";
+
+					document.write('My name is '+name+ 'and my cousin is'+cousin+'(global variable)')
+					document.write(linebreak)
+				}
+
+				function nameTwo() {
+					var nam = "Tayebur Rahman Tipu";
+
+					document.write('My name is '+name+ 'and my cousin is'+cousin+'(global variable)')
+					document.write(linebreak)
+				}
+			</script>
+
+			<button class="btn" onclick="nameOne();">One Details</button>
+			<button class="btn" onclick="nameTwo();">Two Details</button>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

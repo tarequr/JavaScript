@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Conditional Operator: 1. if statement</h3></u><br>
+
+			<script type="text/javascript">
+				var color = "blue";
+
+				if (color == "blue") {
+					document.write("The sky is blue");
+				}
+			</script>
+
+			<u><h3 align="center">JavaScript Conditional Operator: 2. if...else statement</h3></u><br>
+
+			<script type="text/javascript">
+				var color = "red";
+
+				if (color == "blue") {
+					document.write("The sky is blue");
+				}else{
+					document.write("Didn't pick blue color?");
+				}
+			</script>
+
+			<u><h3 align="center">JavaScript Conditional Operator: 3. if...else if...else statement</h3></u><br>
+
+			<script type="text/javascript">
+				var color = "yellow";
+
+				if (color == "blue") {
+					document.write("The sky is blue");
+				}else if (color == "red") {
+					document.write("The sun is red");
+				}else if (color == "yellow") {
+					document.write("The banana is yellow");
+				}else{
+					document.write("No items select");
+				}
+			</script>
+
+			<u><h3 align="center">JavaScript Conditional Operator: 4. Switch Statement</h3></u><br>
+
+			<script type="text/javascript">
+				var myColor = "orange";
+
+				switch(myColor){
+					case "red": 
+					document.write("This look like blood!");
+					break;
+
+					case "blue": 
+					document.write("This look like sky!");
+					break;
+
+					case "orange": 
+					document.write("This look like lemon");
+					break;
+
+					default : document.write("Data not found");
+				}
+			</script>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir
+			</h2>
+		</div>
+	</section>
+</body>
+</html>

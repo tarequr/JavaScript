@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Variable Diclare & Same variable reuse: </h3></u><br><br>
+
+			<script type="text/javascript">
+				var linebreak = "<br>";
+				var my_var    = "Hello World!";
+
+				document.write(my_var)
+				document.write(linebreak)
+
+				my_var = "I am learning JavaScript"
+				document.write(my_var)
+				document.write(linebreak)
+
+				my_var = "script is finnished up..."
+				document.write(my_var)
+			</script>
+
+			<u><h3 align="center">Second Step: </h3></u><br><br>
+
+			<script type="text/javascript">
+				var firstname;
+
+				firstname = "Habibur Rahman";
+
+				document.write(firstname);
+				document.write("<br/>");
+
+				firstname = "Farida Rahman";
+				document.write(firstname);
+			</script>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

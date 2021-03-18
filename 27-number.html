@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		.inp{
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Form Validation: 1.Text validation</h3></u><br><br>
+
+			<form method="post" action="" name="myForm" onsubmit="return validateForm()">
+				First name: <input type="text" name="fname" class="inp" placeholder="enter your first name">
+				<input type="submit" value="Submit" class="btn">
+			</form>
+
+			<script type="text/javascript">
+				function validateForm() {
+					var x = document.forms["myForm"]["fname"].value;
+					if (x == null || x == "") {
+						alert("First name is required");
+						return false;
+					}
+				}
+			</script>
+
+			<u><h3 align="center">JavaScript Form Validation: 2.E-mail validation</h3></u><br><br>
+
+			<form method="post" action="" name="myForm2" onsubmit="return validateForm2()">
+				E-mail address: <input type="text" name="email" class="inp" placeholder="enter your email address">
+				<input type="submit" value="Submit" class="btn">
+			</form>
+
+			<script type="text/javascript">
+				function validateForm2(){
+					var x=document.forms["myForm2"]["email"].value;
+					var atpos=x.indexOf("@");
+					var dotpos=x.lastIndexOf(".");
+
+					if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+						alert("Not a valid e-mail address");
+						return false;
+					}
+				}
+			</script>
+
+			<script type="text/javascript">
+			</script>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir
+			</h2>
+		</div>
+	</section>
+</body>
+</html>

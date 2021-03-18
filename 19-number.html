@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Array: 1</h3></u><br>
+
+			<script type="text/javascript">
+				var i;
+				var myCars = new Array();
+
+				myCars[0] = "volvo";
+				myCars[1] = "nishan";
+				myCars[2] = "bmw";
+				myCars[3] = "honda";
+				myCars[4] = "yamaha";
+
+				for (i = 0; i < myCars.length; i++) {
+					document.write((i+1)+"."+myCars[i]+"<br/>");
+				}
+			</script>
+
+			<u><h3 align="center">JavaScript Array: 2</h3></u><br>
+
+			<script type="text/javascript">
+				var myArray = new Array()
+
+				myArray[0] = "Tarequr";
+				myArray[1] = "Tayebur";
+				myArray[2] = "Jannatul";
+				myArray[3] = "Habibur";
+				myArray[4] = "Farida";
+
+				document.write(myArray[0]+"<br/>"+myArray[1]+"<br/>"+myArray[2]+"<br/>"+myArray[3]+"<br/>"+myArray[4]);
+			</script>
+
+			<u><h3 align="center">JavaScript Array: 3</h3></u><br>
+
+			<script type="text/javascript">
+				var NAME = [];
+
+				NAME["singer1"]   = "Radin";
+				NAME["singer2"]   = "Refat";
+				NAME["guitarist"] = "Rafi";
+				NAME["drummer"]   = "Raisan";
+
+				document.write(NAME["singer1"]+"<br/>");
+				document.write(NAME["singer2"]+"<br/>");
+				document.write(NAME["guitarist"]+"<br/>");
+				document.write(NAME["drummer"]);
+
+			</script>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir
+			</h2>
+		</div>
+	</section>
+</body>
+</html>

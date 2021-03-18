@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Fundamentals</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+		function myFunction() {
+			alert("Welcome to JavaScript");
+		}
+
+		function popup(){
+			alert("Hello Bangladesh!")
+		}
+
+		function multiplication(a,b) {
+			return a*b;
+		}
+	</script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: JavaScript Fundamentals</h2>
+		</div>
+		<div class="maincontent" align="center">
+			<u><h3 align="center">JavaScript Function: Ex- 1</h3></u><br>
+
+			<input type="button" value="Click here!" class="btn" onclick="myFunction();">
+
+			<u><h3 align="center">JavaScript Function: Ex- 2</h3></u><br>
+
+			<input type="button" class="btn" value="popup" onclick="popup();">
+
+			<u><h3 align="center">JavaScript Function: Ex- 3 Parameter</h3></u><br>
+
+			<script type="text/javascript">
+				function getAddition(firstNumber,secondNumber) {
+
+					document.write(firstNumber+"<br/>");
+					document.write(secondNumber);
+
+					var result;
+					result = firstNumber+secondNumber;
+					return result;
+				}
+				var myResult = getAddition(30,50);
+				alert(myResult);
+			</script>
+
+			<u><h3 align="center">JavaScript Function: Ex- 4 Multiplication</h3></u><br>
+
+			<script type="text/javascript">
+				document.write(multiplication(50,2));
+			</script>
+		</div>
+		
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir
+			</h2>
+		</div>
+	</section>
+</body>
+</html>
